@@ -32,7 +32,8 @@ def main():
         print("爬取成功！正在保存...", end="")
         saveData(problemMD, "README" + ".md")
         filePath=savePath+"P"+pNum+".cpp";
-        file =open(filePath,"x");
+        file =open(filePath,"x");#创建cpp文件并写入头文件和创建main函数
+        file.write("#include <iostream>\n\nusing namespace std;\n\nint main(){\n\n\treturn 0;\n}")
         print("保存成功!")
 
 
