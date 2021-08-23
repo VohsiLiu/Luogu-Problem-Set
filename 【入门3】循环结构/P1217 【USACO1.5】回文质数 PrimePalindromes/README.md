@@ -2,7 +2,8 @@
 # [USACO1.5]回文质数 Prime Palindromes
 ## 题目描述
 因为 151 既是一个质数又是一个回文数（从左到右和从右到左是看一样的），所以 151 是回文质数。
-写一个程序来找出范围 $[a,b] (5 \le a &lt; b \le 100,000,000)$( 一亿)间的所有回文质数。
+写一个程序来找出范围 $[a,b] (5 \le a \lt b \le 100,000,000)$​( 一亿)间的所有回文质数。
+
 ## 输入输出格式
 #### 输入格式
 
@@ -39,9 +40,9 @@ Hint 2: Generate palindromes by combining digits properly. You might need more t
 USACO Training Section 1.5
 产生长度为5的回文数:
 ```cpp
-for (d1 = 1; d1 &lt;= 9; d1+=2) { // 只有奇数才会是素数
-for (d2 = 0; d2 &lt;= 9; d2++) {
-for (d3 = 0; d3 &lt;= 9; d3++) {
+for (d1 = 1; d1 <= 9; d1+=2) { // 只有奇数才会是素数
+for (d2 = 0; d2 <= 9; d2++) {
+for (d3 = 0; d3 <= 9; d3++) {
 palindrome = 10000*d1 + 1000*d2 +100*d3 + 10*d2 + d1;//(处理回文数...)
 }
 }
